@@ -341,7 +341,7 @@ if (interactive()) {
               print('')
               
             } else 
-              if (input$data=="SHOTS SHOTS SHOTS"){
+              if (input$data=="Immunizations"){
                 print('')
                 
                 
