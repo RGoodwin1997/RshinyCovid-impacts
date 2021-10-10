@@ -11,7 +11,7 @@ if (interactive()) {
       conditionalPanel(
         condition = "input.Typepicked == 'picked'",
         radioButtons("data",label="Sectors:",c("Online Entertainment","Online Ordering","Online Meetings",
-                                               "SHOTS SHOTS SHOTS","Home Improvement")),
+                                               "Immunizations","Home Improvement")),
       ),
       conditionalPanel(
         condition = "input.Typepicked == 'index'",
@@ -42,7 +42,7 @@ if (interactive()) {
               "Online Meeting services  such as Zoom, Teams, and Webex"
               
             } else 
-              if (input$data=="SHOTS SHOTS SHOTS"){
+              if (input$data=="Immunizations"){
                 "Companies that developed immunizations against Covid-19"
               } else
                 if (input$data=="Home Improvement"){
@@ -101,7 +101,7 @@ if (interactive()) {
               chartSeries(ZM, type="line", subset='2020',theme=chartTheme('white'))
               
             } else 
-              if (input$data=="SHOTS SHOTS SHOTS"){
+              if (input$data=="Immunizations"){
                 getSymbols("MRNA", from = '2017-01-01',to = "2021-10-01",warnings = FALSE,auto.assign = TRUE)
                 chartSeries(MRNA, type="line", subset='2020',theme=chartTheme('white'))
                 
@@ -187,7 +187,7 @@ if (interactive()) {
               #chartSeries(MSFT, type="line", subset='2020',theme=chartTheme('white'))
               
             } else 
-              if (input$data=="SHOTS SHOTS SHOTS"){
+              if (input$data=="Immunizations"){
                 #getSymbols("MRNA", from = '2017-01-01',to = "2021-10-01",warnings = FALSE,auto.assign = TRUE)
                 getSymbols("PFE", from = '2017-01-01',to = "2021-10-01",warnings = FALSE,auto.assign = TRUE)
                 #getSymbols("JNJ", from = '2017-01-01',to = "2021-10-01",warnings = FALSE,auto.assign = TRUE)
@@ -253,7 +253,7 @@ if (interactive()) {
               chartSeries(MSFT, type="line", subset='2020',theme=chartTheme('white'))
               
             } else 
-              if (input$data=="SHOTS SHOTS SHOTS"){
+              if (input$data=="Immunizations"){
                 #getSymbols("MRNA", from = '2017-01-01',to = "2021-10-01",warnings = FALSE,auto.assign = TRUE)
                 #getSymbols("PFE", from = '2017-01-01',to = "2021-10-01",warnings = FALSE,auto.assign = TRUE)
                 getSymbols("JNJ", from = '2017-01-01',to = "2021-10-01",warnings = FALSE,auto.assign = TRUE)
@@ -309,7 +309,7 @@ if (interactive()) {
                print('')
               
             } else 
-              if (input$data=="SHOTS SHOTS SHOTS"){
+              if (input$data=="Immunizations"){
                 print('')
                 
                 
@@ -372,7 +372,7 @@ if (interactive()) {
               print('')
               
             } else 
-              if (input$data=="SHOTS SHOTS SHOTS"){
+              if (input$data=="Immunizations"){
                 print('')
                 
                 
